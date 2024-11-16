@@ -1,0 +1,44 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>Aspire Multi-Project Template</Name>
+		<Description>A .NET Aspire 9.0 multi-project solution with tests.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>10</SortOrder>
+		<Icon>TemplateIcon.ico</Icon>
+		<PreviewImage>PreviewImage.png</PreviewImage>
+		<DefaultName>MyAspireApp</DefaultName>
+		<CreateNewFolder>true</CreateNewFolder>
+		<ProvideDefaultName>true</ProvideDefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Solution File="__ProjectName__.sln">
+			<Projects>
+				<Project
+				  File="src\__ProjectName__.AppHost\__ProjectName__.AppHost.csproj"
+				  ReplaceParameters="true">
+					src\__ProjectName__.AppHost
+				</Project>
+				<Project
+				  File="src\__ProjectName__.Manager\__ProjectName__.Manager.csproj"
+				  ReplaceParameters="true">
+					src\__ProjectName__.Manager
+				</Project>
+				<Project
+				  File="src\__ProjectName__.Web\__ProjectName__.Web.csproj"
+				  ReplaceParameters="true">
+					src\__ProjectName__.Web
+				</Project>
+				<Project
+				  File="src\__ProjectName__.Shared\__ProjectName__.Shared.csproj"
+				  ReplaceParameters="true">
+					src\__ProjectName__.Shared
+				</Project>
+				<Project
+				  File="test\__ProjectName__.Tests\__ProjectName__.Tests.csproj"
+				  ReplaceParameters="true">
+					test\__ProjectName__.Tests
+				</Project>
+			</Projects>
+		</Solution>
+	</TemplateContent>
+</VSTemplate>
