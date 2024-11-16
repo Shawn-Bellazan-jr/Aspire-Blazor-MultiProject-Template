@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Aspire.Project.Template</id> <!-- Unique ID for the NuGet package -->
+    <version>1.0.0</version> <!-- Use semantic versioning -->
+    <title>Aspire Multi-Project Template</title>
+    <authors>Shawn Bellazan</authors> <!-- Replace with your name or organization -->
+    <owners>Shawn Bellazan</owners> <!-- Replace with your name or organization -->
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/Shawn-Bellazan-jr/Aspire-Blazor-MultiProject-Template</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/YourGitHub/Aspire.Project.Template/main/.template.config/TemplateIcon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      A .NET Aspire 9.0 multi-project template for distributed applications.
+      Includes a Blazor frontend, Redis-backed management service, Semantic Kernel AI service, and a shared utilities library. 
+      Designed for scalable, distributed, and maintainable application development.
+    </description>
+    <releaseNotes>
+      Initial release of the Aspire multi-project template. Supports .NET 9.0 with Redis, Blazor, and Semantic Kernel integrations.
+    </releaseNotes>
+    <tags>dotnet-template aspire redis semantic-kernel blazor distributed</tags>
+    <dependencies>
+      <!-- Add any dependencies if applicable -->
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="src/**/*" target="content/src" />
+    <file src="test/**/*" target="content/test" />
+    <file src="__ProjectName__.sln" target="content" />
+    <file src=".template.config/*" target="content/.template.config" />
+  </files>
+</package>
